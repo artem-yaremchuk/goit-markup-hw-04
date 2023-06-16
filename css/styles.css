@@ -695,7 +695,6 @@ body {
 
 .examples-item-link:hover,
 .examples-item-link:focus {
-    transform: translateY(0%);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -717,6 +716,11 @@ body {
     width: 100%;
     transform: translateY(100%);
     transition: transform var(--transition);
+}
+
+.examples-item-link:hover .products-cover-text, 
+.examples-item-link:focus .products-cover-text {
+    transform: translateY(0%);
 }
 
 .examples-container {
