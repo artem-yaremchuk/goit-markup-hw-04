@@ -554,13 +554,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color var(--transition), border var(--transition); 
+    transition: background-color var(--transition), border var(--transition), color var(--transition); 
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: #404bbf; 
     border: none;
+    color: #ffffff;
 }
 
 .is-hidden {
@@ -571,12 +572,6 @@ img {
 
 .icon-close-black {
     fill: currentColor;
-    transition: fill var(--transition);
-}
-
-.icon-close-black:hover,
-.icon-close-black:focus {
-    fill: #ffffff;
 }
 
 /**---------Portfolio.html----------*/
