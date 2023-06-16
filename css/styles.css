@@ -704,8 +704,19 @@ body {
     overflow: hidden;
 }
 
-.examples-item:hover .products-cover-block {
-    transform: translate(0);
+.products-cover-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    padding: 40px 32px; 
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform var(--transition);
 }
 
 .examples-container {
@@ -724,26 +735,10 @@ body {
 }
 
 .examples-text {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-}
-
-.products-cover-block {
-    position: absolute;
-    background-color: #4D5AE5;
-    top: 0;
-    left: 0;
-    padding: 40px 32px 164px 32px;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform var(--transition);
-}
-
-.products-cover-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
 }
 
 /**---------Footer----------*/
